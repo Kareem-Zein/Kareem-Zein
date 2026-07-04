@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO: Primary Meta Tags ===== -->
+<title>Kareem Zein — .NET Software Engineer | Backend, ERP & Desktop Systems Developer</title>
+<meta name="title" content="Kareem Zein — .NET Software Engineer | Backend, ERP & Desktop Systems Developer">
+<meta name="description" content="Kareem Zein is a .NET Software Engineer with 3+ years building enterprise ERP systems, backend APIs, and desktop applications with C#, ASP.NET Core Web API, Entity Framework Core, SQL Server and WPF. Available for international remote roles.">
+<meta name="keywords" content=".NET Software Engineer, C# Developer, ASP.NET Core Web API, SQL Server Developer, Entity Framework Core, WPF Developer, ERP Software Engineer, Backend Engineer, T-SQL, Remote .NET Developer, Software Engineer Syria">
+<meta name="author" content="Kareem Zein">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kareemzein.dev/">
+
+<!-- ===== SEO: Open Graph / Facebook / LinkedIn ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kareemzein.dev/">
+<meta property="og:title" content="Kareem Zein — .NET Software Engineer">
+<meta property="og:description" content="Backend & desktop systems engineer specializing in C#, ASP.NET Core Web API, SQL Server and ERP architecture. Building the Syrian Applications Store. Open to international opportunities.">
+<meta property="og:locale" content="en_US">
+
+<!-- ===== SEO: Twitter ===== -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kareem Zein — .NET Software Engineer">
+<meta name="twitter:description" content="Backend & desktop systems engineer specializing in C#, ASP.NET Core Web API, SQL Server and ERP architecture.">
+
+<!-- ===== SEO: Structured Data (schema.org Person) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kareem Zein",
+  "jobTitle": ".NET Software Engineer",
+  "description": "Results-driven .NET Software Engineer with 3+ years of experience designing enterprise-grade desktop and backend applications using C#, ASP.NET Core Web API, and SQL Server.",
+  "email": "mailto:kareemzain7056@gmail.com",
+  "telephone": "+963-981-272-201",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jaramanah",
+    "addressCountry": "Syria"
+  },
+  "url": "https://kareemzein.dev/",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "TCC – Damascus University"
+  },
+  "knowsAbout": ["C#", "C++", "ASP.NET Core Web API", "Entity Framework Core", "SQL Server", "T-SQL", "WPF", "REST APIs", "ERP Systems"],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Syrian Applications Store"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #0B0F17;
+    --panel: #131A26;
+    --panel-2: #0F1520;
+    --border: #232E40;
+    --text: #E7ECF3;
+    --muted: #8C97AC;
+    --amber: #E3B341;
+    --teal: #4FD1C5;
+    --radius: 10px;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+    --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before{
+    content:"";
+    position: fixed; inset:0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  a{ color: var(--teal); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+  :focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  .wrap{ max-width: 1080px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  /* ---------- Nav ---------- */
+  header{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(11,15,23,0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav{
+    display:flex; align-items:center; justify-content: space-between;
+    padding: 16px 24px; max-width: 1080px; margin:0 auto;
+  }
+  .logo{
+    font-family: var(--mono); font-weight:700; font-size: 1.05rem; letter-spacing: 0.5px;
+    color: var(--text);
+  }
+  .logo span{ color: var(--amber); }
+  .navlinks{ display:flex; gap: 28px; list-style:none; }
+  .navlinks a{ color: var(--muted); font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.3px; }
+  .navlinks a:hover{ color: var(--teal); text-decoration:none; }
+  .navlinks{ padding:0; }
+  @media (max-width: 640px){ .navlinks{ gap: 14px; } .navlinks a{ font-size: 0.72rem; } }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding: 88px 0 60px;
+    display:grid; grid-template-columns: 1fr; gap: 40px;
+  }
+  .eyebrow{
+    font-family: var(--mono); color: var(--amber); font-size: 0.8rem;
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{
+    content:""; width:8px; height:8px; border-radius:50%;
+    background: var(--amber); display:inline-block;
+    box-shadow: 0 0 0 3px rgba(227,179,65,0.15);
+  }
+  h1{
+    font-family: var(--mono); font-weight:700;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 18px;
+  }
+  .hero p.lead{
+    color: var(--muted); font-size: 1.08rem; max-width: 60ch; margin-bottom: 30px;
+  }
+  .cta-row{ display:flex; gap:14px; flex-wrap: wrap; }
+  .btn{
+    font-family: var(--mono); font-size: 0.85rem; padding: 13px 22px;
+    border-radius: var(--radius); border: 1px solid var(--border);
+    display:inline-block; transition: all .15s ease;
+  }
+  .btn-primary{ background: var(--amber); color: #0B0F17; border-color: var(--amber); font-weight:600; }
+  .btn-primary:hover{ background:#f0c65e; text-decoration:none; }
+  .btn-ghost{ color: var(--text); }
+  .btn-ghost:hover{ border-color: var(--teal); color: var(--teal); text-decoration:none; }
+
+  /* ---------- Schema diagram (signature element) ---------- */
+  .diagram-wrap{
+    position: relative; width: 100%; max-width: 620px; aspect-ratio: 1/1; margin: 0 auto;
+  }
+  .diagram-wrap svg{ position:absolute; inset:0; width:100%; height:100%; overflow: visible; }
+  .diagram-wrap .line{
+    stroke: var(--border); stroke-width: 1.5; fill:none;
+    vector-effect: non-scaling-stroke;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .diagram-wrap .line{
+      stroke-dasharray: 140; stroke-dashoffset: 140;
+      animation: draw 1.1s ease forwards;
+    }
+  }
+  @keyframes draw{ to{ stroke-dashoffset: 0; } }
+
+  .node{
+    position:absolute; transform: translate(-50%,-50%);
+    font-family: var(--mono); text-align:center; z-index:2;
+  }
+  .node .dot{
+    width: 14px; height:14px; border-radius:50%; background: var(--panel);
+    border: 2px solid var(--teal); margin: 0 auto 8px;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .node:hover .dot{ transform: scale(1.3); box-shadow: 0 0 0 6px rgba(79,209,197,0.12); }
+  .node.center .dot{ width:20px; height:20px; border-color: var(--amber); background: var(--amber); }
+  .node .label{
+    font-size: 0.68rem; color: var(--muted); white-space: nowrap;
+    background: var(--bg); padding: 2px 6px; border-radius: 4px;
+  }
+  .node.center .label{ color: var(--text); font-weight: 600; font-size: 0.78rem; }
+  .rel-label{
+    position:absolute; font-family: var(--mono); font-size: 0.6rem; color: var(--teal);
+    background: var(--bg); padding: 1px 5px; border-radius: 3px; transform: translate(-50%,-50%);
+    z-index: 2; letter-spacing: 0.3px;
+  }
+  @media (max-width: 720px){
+    .diagram-wrap{ max-width: 380px; }
+    .node .label{ font-size: 0.58rem; }
+    .rel-label{ display: none; }
+  }
+
+  /* ---------- Section shell ---------- */
+  section{ padding: 72px 0; border-top: 1px solid var(--border); }
+  .section-head{ margin-bottom: 36px; }
+  .kicker{
+    font-family: var(--mono); color: var(--teal); font-size: 0.78rem;
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  h2{ font-family: var(--mono); font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 600; }
+
+  /* ---------- About ---------- */
+  .about-grid{ display:grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+  .about-grid p{ color: var(--muted); margin-bottom: 14px; max-width: 68ch; }
+  .fact-card{
+    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px; font-family: var(--mono); font-size: 0.85rem;
+  }
+  .fact-card dt{ color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 14px; }
+  .fact-card dt:first-child{ margin-top:0; }
+  .fact-card dd{ color: var(--text); margin-top: 4px; }
+  @media (max-width: 800px){ .about-grid{ grid-template-columns: 1fr; } }
+
+  /* ---------- Skills as schema tables ---------- */
+  .tables{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 20px; }
+  .db-table{
+    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .db-table .tname{
+    font-family: var(--mono); font-size: 0.78rem; color: var(--amber);
+    padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--panel-2);
+    letter-spacing: 0.5px;
+  }
+  .db-table .tname::before{ content:"▤ "; }
+  .db-table ul{ list-style:none; }
+  .db-table li{
+    font-family: var(--mono); font-size: 0.8rem; padding: 10px 16px;
+    border-bottom: 1px solid var(--panel-2); color: var(--text);
+    display:flex; justify-content: space-between; gap: 10px;
+  }
+  .db-table li:last-child{ border-bottom:none; }
+  .db-table li span{ color: var(--muted); font-size: 0.72rem; }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{ position:relative; padding-left: 28px; }
+  .timeline::before{
+    content:""; position:absolute; left: 6px; top:4px; bottom:4px; width:1px; background: var(--border);
+  }
+  .tl-item{ position:relative; padding-bottom: 40px; }
+  .tl-item:last-child{ padding-bottom: 0; }
+  .tl-item::before{
+    content:""; position:absolute; left: -28px; top: 4px; width:12px; height:12px; border-radius:50%;
+    background: var(--bg); border: 2px solid var(--teal);
+  }
+  .tl-date{ font-family: var(--mono); color: var(--muted); font-size: 0.75rem; letter-spacing: 0.5px; margin-bottom:6px; }
+  .tl-role{ font-family: var(--mono); font-size: 1.05rem; font-weight:600; color: var(--text); }
+  .tl-org{ color: var(--teal); font-size: 0.9rem; margin-bottom: 10px; }
+  .tl-item ul{ padding-left: 18px; color: var(--muted); font-size: 0.92rem; }
+  .tl-item li{ margin-bottom: 6px; }
+
+  /* ---------- Project ---------- */
+  .project-card{
+    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 28px; display:grid; grid-template-columns: auto 1fr; gap: 24px; align-items:start;
+  }
+  .project-card .tag{
+    font-family: var(--mono); font-size: 0.68rem; color: var(--bg); background: var(--teal);
+    padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px; display:inline-block; margin-bottom: 10px;
+  }
+  .project-card h3{ font-family: var(--mono); font-size: 1.15rem; margin-bottom: 10px; }
+  .project-card p{ color: var(--muted); font-size: 0.92rem; }
+  .project-icon{
+    font-family: var(--mono); font-size: 1.6rem; color: var(--amber); border: 1px solid var(--border);
+    border-radius: 8px; width: 52px; height:52px; display:flex; align-items:center; justify-content:center;
+  }
+  @media (max-width: 600px){ .project-card{ grid-template-columns: 1fr; } }
+
+  /* ---------- Education / certs ---------- */
+  .edu-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .edu-grid h4{ font-family: var(--mono); font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing:1px; margin-bottom: 14px; }
+  .edu-grid .item{ margin-bottom: 14px; }
+  .edu-grid .item .t{ font-weight: 600; }
+  .edu-grid .item .s{ color: var(--muted); font-size: 0.85rem; }
+  @media (max-width: 700px){ .edu-grid{ grid-template-columns: 1fr; } }
+
+  /* ---------- Contact ---------- */
+  .contact-card{
+    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 40px; text-align:center;
+  }
+  .contact-card h2{ margin-bottom: 12px; }
+  .contact-card p{ color: var(--muted); max-width: 52ch; margin: 0 auto 26px; }
+  .contact-links{ display:flex; gap: 16px; justify-content:center; flex-wrap: wrap; }
+
+  footer{ padding: 30px 0; text-align:center; color: var(--muted); font-family: var(--mono); font-size: 0.75rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <nav aria-label="Primary">
+    <div class="logo">KAREEM<span>_</span>ZEIN</div>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Open to international remote roles</p>
+      <h1>Kareem Zein<br>.NET Software Engineer</h1>
+      <p class="lead">I design and ship enterprise-grade backend systems and desktop applications — from ERP platforms handling high-volume transactional data to REST APIs built on ASP.NET Core. Based in Jaramanah, Syria, working with teams anywhere.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#experience">View Experience</a>
+        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="diagram-wrap" role="img" aria-label="Diagram showing Kareem Zein connected to his core technologies: SQL Server, ASP.NET Core Web API, Entity Framework Core, C#/C++, WPF, and RESTful APIs">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <path class="line" d="M50,50 L50,12"></path>
+        <path class="line" d="M50,50 L82.9,31"></path>
+        <path class="line" d="M50,50 L82.9,69"></path>
+        <path class="line" d="M50,50 L50,88"></path>
+        <path class="line" d="M50,50 L17.1,69"></path>
+        <path class="line" d="M50,50 L17.1,31"></path>
+      </svg>
+      <div class="rel-label" style="left:50%; top:29%;">stores</div>
+      <div class="rel-label" style="left:69%; top:39%;">exposes</div>
+      <div class="rel-label" style="left:69%; top:61%;">maps to</div>
+      <div class="rel-label" style="left:50%; top:71%;">implements</div>
+      <div class="rel-label" style="left:31%; top:61%;">renders</div>
+      <div class="rel-label" style="left:31%; top:39%;">serves</div>
+
+      <div class="node center" style="left:50%; top:50%;">
+        <div class="dot"></div>
+        <div class="label">Kareem Zein</div>
+      </div>
+      <div class="node" style="left:50%; top:12%;">
+        <div class="dot"></div>
+        <div class="label">SQL Server / T-SQL</div>
+      </div>
+      <div class="node" style="left:82.9%; top:31%;">
+        <div class="dot"></div>
+        <div class="label">ASP.NET Core Web API</div>
+      </div>
+      <div class="node" style="left:82.9%; top:69%;">
+        <div class="dot"></div>
+        <div class="label">Entity Framework Core</div>
+      </div>
+      <div class="node" style="left:50%; top:88%;">
+        <div class="dot"></div>
+        <div class="label">C# / C++</div>
+      </div>
+      <div class="node" style="left:17.1%; top:69%;">
+        <div class="dot"></div>
+        <div class="label">WPF Desktop</div>
+      </div>
+      <div class="node" style="left:17.1%; top:31%;">
+        <div class="dot"></div>
+        <div class="label">RESTful APIs</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <p class="kicker">// About</p>
+        <h2 style="margin-bottom:20px;">Built for systems that can't afford to go down</h2>
+        <p>I'm a results-driven .NET Software Engineer with 3+ years of hands-on experience designing, developing, and maintaining enterprise-grade desktop and backend applications using C#, C++, ASP.NET Core Web API, and SQL Server.</p>
+        <p>My core strength is ERP system development — building new modules, optimizing legacy code, and engineering databases that stay fast and reliable under high transaction volume. I've led feature development on production ERP platforms, mentored junior engineers through code review, and tuned SQL Server performance at the query and index level.</p>
+        <p>Outside client work, I founded and architected the Syrian Applications Store, a digital marketplace built on ASP.NET Core Web API — proof that I can take a system from idea to production on my own.</p>
+      </div>
+      <dl class="fact-card">
+        <dt>Location</dt>
+        <dd>Jaramanah, Syria</dd>
+        <dt>Focus</dt>
+        <dd>Backend & Desktop Systems</dd>
+        <dt>Experience</dt>
+        <dd>3+ years, ERP platforms</dd>
+        <dt>Languages</dt>
+        <dd>Arabic (Native), English (B1–B2)</dd>
+        <dt>Status</dt>
+        <dd>Open to international roles</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">// Skills</p>
+        <h2>Technical stack</h2>
+      </div>
+      <div class="tables">
+        <div class="db-table">
+          <div class="tname">languages_frameworks</div>
+          <ul>
+            <li>C# <span>primary</span></li>
+            <li>C++ <span>legacy systems</span></li>
+            <li>ASP.NET Core Web API <span>backend</span></li>
+            <li>Entity Framework Core <span>ORM</span></li>
+            <li>LINQ <span>querying</span></li>
+            <li>WPF <span>desktop UI</span></li>
+          </ul>
+        </div>
+        <div class="db-table">
+          <div class="tname">databases</div>
+          <ul>
+            <li>SQL Server <span>primary</span></li>
+            <li>T-SQL <span>stored procs</span></li>
+            <li>Query Optimization <span>performance</span></li>
+            <li>Database Design <span>schema</span></li>
+          </ul>
+        </div>
+        <div class="db-table">
+          <div class="tname">apis_services</div>
+          <ul>
+            <li>RESTful APIs <span>design</span></li>
+            <li>Web Services <span>integration</span></li>
+          </ul>
+        </div>
+        <div class="db-table">
+          <div class="tname">tools</div>
+          <ul>
+            <li>Visual Studio <span>IDE</span></li>
+            <li>Git <span>version control</span></li>
+            <li>Postman <span>API testing</span></li>
+            <li>SSMS <span>database mgmt</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">// Experience</p>
+        <h2>Where I've built things</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">JUL 2025 — JUL 2026</div>
+          <div class="tl-role">Senior Software Engineer</div>
+          <div class="tl-org">alameensoft</div>
+          <ul>
+            <li>Led development of new features and architectural improvements for the Alameen ERP platform using C# and SQL Server.</li>
+            <li>Designed complex business logic modules with a focus on performance and reliability.</li>
+            <li>Conducted code reviews and mentored junior engineers on code quality and standards.</li>
+            <li>Optimized SQL Server performance through query tuning, indexing, and stored procedure improvements.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">JAN 2023 — JUN 2025</div>
+          <div class="tl-role">Software Engineer</div>
+          <div class="tl-org">alameensoft</div>
+          <ul>
+            <li>Engineered and delivered multiple modules for Alameen 10 ERP using C#, C++, and SQL Server.</li>
+            <li>Resolved critical production bugs in legacy Alameen 9 ERP, reducing downtime and improving reliability.</li>
+            <li>Designed and optimized complex T-SQL queries, stored procedures, and schemas for high-volume transactional data.</li>
+            <li>Built WPF desktop interfaces with business logic tightly integrated to SQL Server backends.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">MAY 2025 — MAY 2026</div>
+          <div class="tl-role">Founder & Technical Architect</div>
+          <div class="tl-org">Syrian Applications Store</div>
+          <ul>
+            <li>Founded a digital marketplace giving users in Syria secure, reliable access to mobile applications.</li>
+            <li>Architected and developed the backend using ASP.NET Core Web API following RESTful design principles.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">// Featured Project</p>
+        <h2>Syrian Applications Store</h2>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">SA</div>
+        <div>
+          <span class="tag">ASP.NET Core Web API</span>
+          <h3>A digital marketplace built from the ground up</h3>
+          <p>Founded to give users in Syria secure, reliable access to mobile applications, the platform's backend is architected entirely on ASP.NET Core Web API with RESTful design principles — covering everything from API design to deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap edu-grid">
+      <div>
+        <h4>Education</h4>
+        <div class="item">
+          <div class="t">Diploma in Software Engineering</div>
+          <div class="s">TCC – Damascus University, Syria · 2020–2023</div>
+        </div>
+      </div>
+      <div>
+        <h4>Certifications</h4>
+        <div class="item">
+          <div class="t">Introduction to Structured Query Language (SQL)</div>
+          <div class="s">Coursera, 2022</div>
+        </div>
+        <div class="item">
+          <div class="t">Building Web Applications in PHP</div>
+          <div class="s">Coursera, 2022</div>
+        </div>
+        <div class="item">
+          <div class="t">HTML, CSS and JavaScript for Web Developers</div>
+          <div class="s">Coursera, 2021</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <p class="kicker" style="justify-content:center;">// Contact</p>
+        <h2>Let's build something reliable</h2>
+        <p>Open to backend and desktop engineering roles with international teams. Reach out directly — I usually reply within a day.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:kareemzain7056@gmail.com">kareemzain7056@gmail.com</a>
+          <a class="btn btn-ghost" href="tel:+963981272201">+963 981 272 201</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Kareem Zein — .NET Software Engineer, Jaramanah, Syria</div>
+</footer>
+
+</body>
+</html>
