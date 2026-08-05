@@ -4,7 +4,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Website-kareem--zein.com-000000?style=for-the-badge&logo=about.me&logoColor=white)](https://kareem-zein.com)
 [![Email](https://img.shields.io/badge/Email-contact@kareem--zein.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@kareem-zein.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kareem_Zein-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN_HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kareem_Zein-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kareem-zein-)
 
 ---
 
