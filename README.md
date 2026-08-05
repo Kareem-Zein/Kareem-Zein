@@ -49,8 +49,5 @@ Results-driven .NET Software Engineer with **3+ years of experience** architecti
 ---
 
 ### 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kareem-Zein&show_icons=true&theme=dark" alt="Kareem's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kareem-Zein&layout=compact&theme=dark" alt="Top Languages" width="48%" />
-</p>
+![Kareem's GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=Kareem-Zein&show_icons=true&theme=dark&count-private=true)
+![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Kareem-Zein&layout=compact&theme=dark&count-private=true)
