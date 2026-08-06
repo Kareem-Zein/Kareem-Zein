@@ -88,6 +88,26 @@
     --ease: cubic-bezier(.16,.84,.44,1);
   }
 
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .social-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
   *{ box-sizing: border-box; margin:0; padding:0; }
   html{ scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce){ html{ scroll-behavior: auto; } }
