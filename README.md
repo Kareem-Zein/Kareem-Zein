@@ -41,7 +41,7 @@ Results-driven .NET Software Engineer with **3+ years of experience** architecti
 
 ### 🌟 Featured Project
 
-**Syrian Applications Store** *(Founder & Technical Architect)*
+**Syrian Applications Store (Discontinued)** *(Founder & Technical Architect)*
 * Architected and deployed a secure digital marketplace platform serving users in Syria.
 * Designed the entire backend using **ASP.NET Core Web API** following strict RESTful design principles.
 * Handled the system end-to-end: from API architectural design to deployment and maintenance.
