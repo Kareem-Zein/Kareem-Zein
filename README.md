@@ -41,6 +41,11 @@ Results-driven .NET Software Engineer with **3+ years of experience** architecti
 
 ### 🌟 Featured Project
 
+[**File hash Generator and validator**](https://github.com/Kareem-Zein/FileHashGeneratorAndValidator)
+* A lightweight open-source desktop tool for generating and validating file hashes.
+* Built to generate and validate file hashes locally and offline, the application supports multiple hashing algorithms and processes large files using chunked streaming with an 80 KB buffer — keeping memory usage controlled while maintaining a responsive UI.
+            The application uses WPF-UI for a modern Windows 11-inspired interface and is distributed as a self-contained executable, requiring no pre-installed .NET Runtime.
+
 **Syrian Applications Store (Discontinued)** *(Founder & Technical Architect)*
 * Architected and deployed a secure digital marketplace platform serving users in Syria.
 * Designed the entire backend using **ASP.NET Core Web API** following strict RESTful design principles.
