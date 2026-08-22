@@ -38,12 +38,21 @@ Results-driven .NET Software Engineer with **3+ years of experience** architecti
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ---
+### Nuget Packages
+[**KZ.FileHash**](https://www.nuget.org/packages/KZ.FileHash)
+*  is a lightweight .NET library for calculating cryptographic hashes of files and streams asynchronously.
+*  It is designed for applications that need reliable and memory-efficient file hashing without loading the entire file into memory.
+
+The library supports multiple hashing algorithms, progress reporting, cancellation, file streams, and non-seekable streams.
 
 ### 🌟 Featured Project
 
 [**File hash Generator and validator**](https://github.com/Kareem-Zein/FileHashGeneratorAndValidator)
 * A lightweight open-source desktop tool for generating and validating file hashes.
-* Built to generate and validate file hashes locally and offline, the application supports multiple hashing algorithms and processes large files using chunked streaming with an 80 KB buffer — keeping memory usage controlled while maintaining a responsive UI.
+* This application relies on our standalone, custom-built open-source hashing engine:
+* **[KZ.FileHash](https://www.nuget.org/packages/KZ.FileHash)** `v1.0.0` — *High-performance, zero-allocation multi-hashing core built using `ArrayPool<byte>` and single-pass streaming architecture.
+
+* Built to generate and validate file hashes locally and offline, the application supports multiple hashing algorithms and processes large files using chunked streaming keeping memory usage controlled while maintaining a responsive UI.
             The application uses WPF-UI for a modern Windows 11-inspired interface and is distributed as a self-contained executable, requiring no pre-installed .NET Runtime.
 
 **Syrian Applications Store (Discontinued)** *(Founder & Technical Architect)*
