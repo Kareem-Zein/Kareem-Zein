@@ -12,7 +12,7 @@
 Results-driven .NET Software Engineer with **3+ years of experience** architecting and maintaining enterprise-grade desktop and backend applications. Specialized in high-volume transactional ERP platforms, SQL Server query/index optimization, and building robust RESTful APIs with ASP.NET Core.
 
 - 🌍 **Open to:** International Remote Roles & Relocation.
-- 🏢 **Current/Past Core Scope:** Senior Software Engineer at alameensoft.
+- 🏢 **Past Core Scope:** Senior Software Engineer @ alameensoft.
 
 ---
 
