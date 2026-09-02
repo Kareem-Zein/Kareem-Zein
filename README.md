@@ -9,7 +9,27 @@
 ---
 
 ### 🚀 Summary
-Results-driven .NET Software Engineer with **3+ years of experience** architecting and maintaining enterprise-grade desktop and backend applications. Specialized in high-volume transactional ERP platforms, SQL Server query/index optimization, and building robust RESTful APIs with ASP.NET Core.
+I’m a .NET Backend Engineer with **3+ years** of experience building and maintaining production ERP systems.
+
+My strongest areas are:
+
+**• ASP.NET Core Web APIs**
+
+**• C# / EF Core**
+
+**• SQL Server & T-SQL**
+
+**• Query and index optimization**
+
+**• Legacy backend modernization**
+
+**• High-volume transactional systems**
+
+I’m particularly interested in helping teams with existing .NET systems that have performance, maintainability, or backend complexity issues.
+
+I also build open-source .NET tools and libraries, including KZ.FileHash, a memory-efficient file hashing library for .NET.
+
+Currently open to remote backend engineering and freelance engagements.
 
 - 🌍 **Open to:** International Remote Roles & Relocation.
 - 🏢 **Past Core Scope:** Senior Software Engineer @ alameensoft.
