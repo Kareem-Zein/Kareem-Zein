@@ -1,6 +1,6 @@
 # Hi there, I'm Kareem Zein 👋
 
-**.NET Software Engineer** | Building high-throughput enterprise systems, ERP platforms, and low-latency databases.
+**.NET Backend Engineer | ASP.NET Core & SQL Server | ERP Systems | API & Database Performance**
 
 [![Portfolio](https://img.shields.io/badge/Website-kareem--zein.com-000000?style=for-the-badge&logo=about.me&logoColor=white)](https://kareem-zein.com)
 [![Email](https://img.shields.io/badge/Email-contact@kareem--zein.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@kareem-zein.com)
