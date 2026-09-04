@@ -1,750 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9CJQXSVK6"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9CJQXSVK6"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-C9CJQXSVK6');
+        gtag('config', 'G-C9CJQXSVK6');
+
+        gtag('event', 'page_info', {
+            page_url: window.location.href,
+            page_path: window.location.pathname,
+            page_title: document.title
+        });
     </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ===== SEO: Primary Meta Tags ===== -->
-<title>Kareem Zein — .NET Engineer | Backend, ERP & Desktop Systems Developer</title>
-<meta name="title" content="Kareem Zein — .NET Engineer | Backend, ERP & Desktop Systems Developer">
-<meta name="description" content="Kareem Zein is a .NET Engineer with 3+ years building enterprise ERP systems, backend APIs, and desktop applications with C#, ASP.NET Core Web API, Entity Framework Core, SQL Server and WPF. Available for international remote roles.">
-<meta name="keywords" content=".NET Engineer, C# Developer, ASP.NET Core Web API, SQL Server Developer, Entity Framework Core, WPF Developer, ERP Software Engineer, Backend Engineer, T-SQL, Remote .NET Developer, Software Engineer Syria">
-<meta name="author" content="Kareem Zein">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://kareem-zein.com">
-
-<!-- ===== SEO: Open Graph / Facebook / LinkedIn ===== -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kareem-zein.com">
-<meta property="og:title" content="Kareem Zein — .NET Engineer">
-<meta property="og:description" content="Backend & desktop systems engineer specializing in C#, ASP.NET Core Web API, SQL Server and ERP architecture. Building the Syrian Applications Store (Discontinued). Open to international opportunities.">
-<meta property="og:locale" content="en_US">
-
-<!-- ===== SEO: Twitter ===== -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kareem Zein — .NET Engineer">
-<meta name="twitter:description" content="Backend & desktop systems engineer specializing in C#, ASP.NET Core Web API, SQL Server and ERP architecture.">
-
-<!-- ===== SEO: Structured Data (schema.org Person) ===== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kareem Zein",
-  "jobTitle": ".NET Engineer",
-  "description": "Results-driven .NET Engineer with 3+ years of experience designing enterprise-grade desktop and backend applications using C#, ASP.NET Core Web API, and SQL Server.",
-  "email": "mailto:contact@kareem-zein.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Jaramanah",
-    "addressCountry": "Syria"
-  },
-  "url": "https://kareem-zein.com",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "TCC – Damascus University"
-  },
-  "knowsAbout": ["C#", "C++", "ASP.NET Core Web API", "Entity Framework Core", "SQL Server", "T-SQL", "WPF", "REST APIs", "ERP Systems"],
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareem Zein | .NET Backend Engineer</title>
+    <meta name="description"
+        content=".NET Backend Engineer specializing in ASP.NET Core, C#, EF Core, SQL Server, ERP systems, and backend performance.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kareem-zein.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kareem Zein | .NET Backend Engineer">
+    <meta property="og:description"
+        content=".NET Backend Engineer specializing in ASP.NET Core, C#, EF Core, SQL Server, ERP systems, and backend performance.">
+    <meta property="og:url" content="https://kareem-zein.com/">
+    <meta property="og:site_name" content="Kareem Zein">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kareem Zein | .NET Backend Engineer">
+    <meta name="twitter:description"
+        content=".NET Backend Engineer specializing in ASP.NET Core, C#, EF Core, SQL Server, ERP systems, and backend performance.">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://kareem-zein.com/#person",
+                    "name": "Kareem Zein",
+                    "url": "https://kareem-zein.com/",
+                    "jobTitle": ".NET Backend Engineer",
+                    "sameAs": [
+                        "https://github.com/Kareem-Zein",
+                        "https://www.linkedin.com/in/kareem-zein-"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://kareem-zein.com/#website",
+                    "url": "https://kareem-zein.com/",
+                    "name": "Kareem Zein",
+                    "description": ".NET Backend Engineer specializing in ASP.NET Core, C#, EF Core, SQL Server, ERP systems, and backend performance.",
+                    "publisher": {
+                        "@id": "https://kareem-zein.com/#person"
+                    }
+                }
+            ]
+        }
 </script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-  :root{
-    --bg: #080B10;
-    --bg-2: #0C121B;
-    --panel: #10161F;
-    --panel-2: #0C121A;
-    --glass: rgba(255,255,255,0.035);
-    --border: #1E2836;
-    --border-soft: #182130;
-    --text: #EAEEF6;
-    --muted: #8B96AA;
-    --muted-2: #64707F;
-    --amber: #EFB94E;
-    --amber-dim: rgba(239,185,78,0.14);
-    --teal: #46D8C4;
-    --teal-dim: rgba(70,216,196,0.14);
-    --radius: 14px;
-    --radius-sm: 8px;
-    --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
-    --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
-    --ease: cubic-bezier(.16,.84,.44,1);
-  }
-
-  .social-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.2s ease;
-  }
-  
-  .social-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
-  }
-  
-  *{ box-sizing: border-box; margin:0; padding:0; }
-  html{ scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior: auto; } }
-
-  body{
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-
-  body::before{
-    content:"";
-    position: fixed; inset:0;
-    background:
-      radial-gradient(560px 420px at 12% -6%, rgba(239,185,78,0.10), transparent 60%),
-      radial-gradient(620px 480px at 92% 18%, rgba(70,216,196,0.09), transparent 60%),
-      radial-gradient(700px 500px at 50% 110%, rgba(70,216,196,0.06), transparent 60%);
-    pointer-events: none;
-    z-index: 0;
-  }
-  body::after{
-    content:"";
-    position: fixed; inset:0;
-    background-image:
-      linear-gradient(var(--border-soft) 1px, transparent 1px),
-      linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
-    background-size: 44px 44px;
-    -webkit-mask-image: radial-gradient(circle at 50% 0%, black, transparent 75%);
-    mask-image: radial-gradient(circle at 50% 0%, black, transparent 75%);
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  a{ color: var(--teal); text-decoration: none; }
-  a:hover{ text-decoration: underline; }
-  :focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 2px; }
-  ::selection{ background: var(--amber-dim); color: var(--text); }
-
-  .wrap{ max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
-  img, svg{ max-width: 100%; display:block; }
-
-  /* ---------- Reveal-on-scroll ---------- */
-  .reveal{ opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-  .reveal.is-visible{ opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
-
-  /* ---------- Nav ---------- */
-  header{
-    position: sticky; top:0; z-index: 100;
-    background: rgba(8,11,16,0.72);
-    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--border);
-  }
-  nav{
-    display:flex; align-items:center; justify-content: space-between;
-    padding: 15px 24px; max-width: 1100px; margin:0 auto; position: relative; z-index: 1;
-  }
-  .logo{
-    font-family: var(--mono); font-weight:700; font-size: 1.02rem; letter-spacing: 0.5px;
-    color: var(--text); white-space: nowrap;
-  }
-  .logo span{ color: var(--amber); }
-
-  .navlinks{ display:flex; align-items:center; gap: 30px; list-style:none; }
-  .navlinks a{ color: var(--muted); font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.3px; position:relative; padding: 4px 0; }
-  .navlinks a::after{
-    content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px; background: var(--teal);
-    transform: scaleX(0); transform-origin: left; transition: transform .25s var(--ease);
-  }
-  .navlinks a:hover{ color: var(--teal); text-decoration:none; }
-  .navlinks a:hover::after{ transform: scaleX(1); }
-
-  .navlinks .btn-primary{ font-size: 0.76rem; padding: 9px 16px; }
-
-  .menu-toggle{
-    display:none; width: 40px; height: 40px; border-radius: var(--radius-sm);
-    border: 1px solid var(--border); background: var(--glass); cursor: pointer;
-    position: relative; z-index: 2;
-  }
-  .menu-toggle span, .menu-toggle span::before, .menu-toggle span::after{
-    content:""; position:absolute; left:11px; right:11px; height:1.5px; background: var(--text);
-    transition: transform .25s var(--ease), opacity .2s ease;
-  }
-  .menu-toggle span{ top:19px; }
-  .menu-toggle span::before{ top:-7px; }
-  .menu-toggle span::after{ top:7px; }
-  .menu-toggle[aria-expanded="true"] span{ background: transparent; }
-  .menu-toggle[aria-expanded="true"] span::before{ transform: translateY(7px) rotate(45deg); }
-  .menu-toggle[aria-expanded="true"] span::after{ transform: translateY(-7px) rotate(-45deg); }
-
-  @media (max-width: 760px){
-    .menu-toggle{ display:block; }
-    .navlinks{
-      position: absolute; top: 100%; left:0; right:0;
-      flex-direction: column; align-items: stretch; gap: 0;
-      background: rgba(9,13,19,0.98); backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      max-height: 0; overflow: hidden; opacity: 0;
-      transition: max-height .35s var(--ease), opacity .3s ease;
-    }
-    .navlinks.open{ max-height: 400px; opacity: 1; }
-    .navlinks li{ border-top: 1px solid var(--border-soft); }
-    .navlinks a{ display:block; padding: 16px 24px; font-size: 0.85rem; }
-    .navlinks a::after{ display:none; }
-    .navlinks .cta-item{ padding: 16px 24px 20px; }
-    .navlinks .btn-primary{ display:block; text-align:center; }
-  }
-
-  /* ---------- Buttons ---------- */
-  .btn{
-    font-family: var(--mono); font-size: 0.85rem; padding: 13px 22px;
-    border-radius: var(--radius-sm); border: 1px solid var(--border);
-    display:inline-block; transition: all .18s var(--ease); cursor: pointer;
-  }
-  .btn-primary{ background: var(--amber); color: #14100A; border-color: var(--amber); font-weight:600; }
-  .btn-primary:hover{ background:#f5c66b; text-decoration:none; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(239,185,78,0.18); }
-  .btn-ghost{ color: var(--text); background: var(--glass); }
-  .btn-ghost:hover{ border-color: var(--teal); color: var(--teal); text-decoration:none; transform: translateY(-1px); }
-
-  /* ---------- Hero ---------- */
-  .hero{
-    padding: 76px 0 64px;
-    display:grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center;
-  }
-  .eyebrow{
-    font-family: var(--mono); color: var(--amber); font-size: 0.78rem;
-    letter-spacing: 1.8px; text-transform: uppercase; margin-bottom: 20px;
-    display:inline-flex; align-items:center; gap:10px;
-    border: 1px solid rgba(239,185,78,0.3); background: var(--amber-dim);
-    padding: 6px 12px 6px 10px; border-radius: 999px;
-  }
-  .eyebrow::before{
-    content:""; width:7px; height:7px; border-radius:50%;
-    background: var(--amber); display:inline-block;
-    box-shadow: 0 0 0 3px rgba(239,185,78,0.2);
-    animation: pulse 2.4s ease infinite;
-  }
-  @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:.45; } }
-
-  h1{
-    font-family: var(--mono); font-weight:700;
-    font-size: clamp(2rem, 4.6vw, 3.35rem);
-    line-height: 1.12; letter-spacing: -0.5px; margin-bottom: 18px;
-  }
-  h1 .accent{ color: var(--teal); }
-  .hero p.lead{
-    color: var(--muted); font-size: clamp(0.98rem, 1.4vw, 1.08rem); max-width: 58ch; margin-bottom: 30px;
-  }
-  .cta-row{ display:flex; gap:14px; flex-wrap: wrap; }
-
-  .stat-row{
-    display:flex; gap: 28px; margin-top: 40px; flex-wrap: wrap;
-    padding-top: 28px; border-top: 1px solid var(--border-soft);
-  }
-  .stat b{ font-family: var(--mono); font-size: 1.35rem; color: var(--text); display:block; }
-  .stat span{ font-size: 0.78rem; color: var(--muted-2); letter-spacing: 0.2px; }
-
-  /* ---------- Schema diagram (signature element) ---------- */
-  .diagram-wrap{
-    position: relative; width: 100%; max-width: 560px; aspect-ratio: 1/1; margin: 0 auto;
-  }
-  .diagram-wrap svg{ position:absolute; inset:0; width:100%; height:100%; overflow: visible; }
-  .diagram-wrap .line{
-    stroke: var(--border); stroke-width: 1.4; fill:none;
-    vector-effect: non-scaling-stroke;
-  }
-  @media (prefers-reduced-motion: no-preference){
-    .diagram-wrap .line{
-      stroke-dasharray: 140; stroke-dashoffset: 140;
-      animation: draw 1.2s var(--ease) forwards;
-    }
-    .diagram-wrap .line.l1{ animation-delay: .05s; }
-    .diagram-wrap .line.l2{ animation-delay: .15s; }
-    .diagram-wrap .line.l3{ animation-delay: .25s; }
-    .diagram-wrap .line.l4{ animation-delay: .35s; }
-    .diagram-wrap .line.l5{ animation-delay: .45s; }
-    .diagram-wrap .line.l6{ animation-delay: .55s; }
-  }
-  @keyframes draw{ to{ stroke-dashoffset: 0; } }
-
-  .node{
-    position:absolute; transform: translate(-50%,-50%);
-    font-family: var(--mono); text-align:center; z-index:2;
-  }
-  .node .dot{
-    width: 13px; height:13px; border-radius:50%; background: var(--panel);
-    border: 2px solid var(--teal); margin: 0 auto 8px;
-    transition: transform .2s var(--ease), box-shadow .2s var(--ease);
-  }
-  .node:hover .dot{ transform: scale(1.35); box-shadow: 0 0 0 7px rgba(70,216,196,0.14); }
-  .node.center .dot{
-    width:22px; height:22px; border-color: var(--amber); background: var(--amber);
-    box-shadow: 0 0 0 6px rgba(239,185,78,0.14);
-    animation: centerpulse 2.6s ease infinite;
-  }
-  @keyframes centerpulse{
-    0%,100%{ box-shadow: 0 0 0 6px rgba(239,185,78,0.14); }
-    50%{ box-shadow: 0 0 0 11px rgba(239,185,78,0.06); }
-  }
-  .node .label{
-    font-size: 0.66rem; color: var(--muted); white-space: nowrap;
-    background: var(--bg-2); border: 1px solid var(--border-soft); padding: 3px 8px; border-radius: 5px;
-  }
-  .node.center .label{ color: var(--text); font-weight: 600; font-size: 0.8rem; border-color: rgba(239,185,78,0.3); }
-  .rel-label{
-    position:absolute; font-family: var(--mono); font-size: 0.6rem; color: var(--teal);
-    background: var(--bg); padding: 1px 5px; border-radius: 3px; transform: translate(-50%,-50%);
-    z-index: 2; letter-spacing: 0.3px;
-  }
-  @media (max-width: 900px){
-    .hero{ grid-template-columns: 1fr; gap: 40px; text-align: left; }
-    .diagram-wrap{ max-width: 420px; }
-  }
-  @media (max-width: 480px){
-    .diagram-wrap{ max-width: 320px; }
-    .node .label{ font-size: 0.56rem; padding: 2px 6px; }
-    .rel-label{ display: none; }
-    .stat-row{ gap: 22px; }
-  }
-
-  /* ---------- Section shell ---------- */
-  section{ padding: clamp(52px, 8vw, 84px) 0; border-top: 1px solid var(--border); position: relative; }
-  .section-head{ margin-bottom: 36px; }
-  .kicker{
-    font-family: var(--mono); color: var(--teal); font-size: 0.76rem;
-    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
-  }
-  h2{ font-family: var(--mono); font-size: clamp(1.35rem, 3vw, 1.85rem); font-weight: 600; letter-spacing: -0.2px; }
-
-  /* ---------- About ---------- */
-  .about-grid{ display:grid; grid-template-columns: 1.6fr 1fr; gap: 40px; }
-  .about-grid p{ color: var(--muted); margin-bottom: 14px; max-width: 66ch; }
-  .fact-card{
-    background: linear-gradient(180deg, var(--panel), var(--panel-2));
-    border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 22px; font-family: var(--mono); font-size: 0.85rem; height: fit-content;
-  }
-  .fact-card dt{ color: var(--muted-2); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 15px; }
-  .fact-card dt:first-child{ margin-top:0; }
-  .fact-card dd{ color: var(--text); margin-top: 4px; }
-  @media (max-width: 800px){ .about-grid{ grid-template-columns: 1fr; } }
-
-  /* ---------- Skills as schema tables ---------- */
-  .tables{ display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: 18px; }
-  .db-table{
-    background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
-    overflow: hidden; transition: border-color .2s ease, transform .2s ease;
-  }
-  .db-table:hover{ border-color: rgba(70,216,196,0.35); transform: translateY(-2px); }
-  .db-table .tname{
-    font-family: var(--mono); font-size: 0.78rem; color: var(--amber);
-    padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--panel-2);
-    letter-spacing: 0.5px;
-  }
-  .db-table .tname::before{ content:"▤ "; }
-  .db-table ul{ list-style:none; }
-  .db-table li{
-    font-family: var(--mono); font-size: 0.79rem; padding: 10px 16px;
-    border-bottom: 1px solid var(--border-soft); color: var(--text);
-    display:flex; justify-content: space-between; gap: 10px; flex-wrap: wrap;
-  }
-  .db-table li:last-child{ border-bottom:none; }
-  .db-table li span{ color: var(--muted-2); font-size: 0.71rem; }
-
-  /* ---------- Experience timeline ---------- */
-  .timeline{ position:relative; padding-left: 28px; }
-  .timeline::before{
-    content:""; position:absolute; left: 6px; top:4px; bottom:4px; width:1px;
-    background: linear-gradient(var(--teal), var(--border) 40%, var(--border));
-    opacity: .5;
-  }
-  .tl-item{ position:relative; padding-bottom: 40px; }
-  .tl-item:last-child{ padding-bottom: 0; }
-  .tl-item::before{
-    content:""; position:absolute; left: -28px; top: 4px; width:12px; height:12px; border-radius:50%;
-    background: var(--bg); border: 2px solid var(--teal);
-  }
-  .tl-date{ font-family: var(--mono); color: var(--muted-2); font-size: 0.74rem; letter-spacing: 0.5px; margin-bottom:6px; }
-  .tl-role{ font-family: var(--mono); font-size: clamp(0.98rem, 2vw, 1.05rem); font-weight:600; color: var(--text); }
-  .tl-org{ color: var(--teal); font-size: 0.9rem; margin-bottom: 10px; }
-  .tl-item ul{ padding-left: 18px; color: var(--muted); font-size: 0.92rem; }
-  .tl-item li{ margin-bottom: 6px; }
-  @media (max-width: 480px){
-    .timeline{ padding-left: 20px; }
-    .tl-item::before{ left: -20px; width:10px; height:10px; }
-  }
-
-  /* ---------- Project ---------- */
-  .project-card{
-    background: linear-gradient(160deg, var(--panel), var(--panel-2));
-    border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 28px; display:grid; grid-template-columns: auto 1fr; gap: 24px; align-items:start;
-  }
-  .project-card .tag{
-    font-family: var(--mono); font-size: 0.67rem; color: var(--bg); background: var(--teal);
-    padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px; display:inline-block; margin-bottom: 10px;
-  }
-  .project-card h3{ font-family: var(--mono); font-size: clamp(1.02rem,2.2vw,1.15rem); margin-bottom: 10px; }
-  .project-card p{ color: var(--muted); font-size: 0.92rem; }
-  .project-icon{
-    font-family: var(--mono); font-size: 1.5rem; color: var(--amber); border: 1px solid var(--border);
-    border-radius: 10px; width: 52px; height:52px; display:flex; align-items:center; justify-content:center;
-    background: var(--amber-dim); flex-shrink: 0;
-  }
-  @media (max-width: 560px){ .project-card{ grid-template-columns: 1fr; } }
-
-  /* ---------- Education / certs ---------- */
-  .edu-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-  .edu-grid h4{ font-family: var(--mono); font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing:1px; margin-bottom: 14px; }
-  .edu-grid .item{ margin-bottom: 14px; }
-  .edu-grid .item .t{ font-weight: 600; }
-  .edu-grid .item .s{ color: var(--muted); font-size: 0.85rem; }
-  @media (max-width: 700px){ .edu-grid{ grid-template-columns: 1fr; } }
-
-  /* ---------- Contact ---------- */
-  .contact-card{
-    background: linear-gradient(160deg, var(--panel), var(--panel-2));
-    border: 1px solid var(--border); border-radius: var(--radius);
-    padding: clamp(28px, 5vw, 44px); text-align:center;
-  }
-  .contact-card h2{ margin-bottom: 12px; }
-  .contact-card p{ color: var(--muted); max-width: 52ch; margin: 0 auto 26px; }
-  .contact-links{ display:flex; gap: 16px; justify-content:center; flex-wrap: wrap; }
-
-  footer{ padding: 30px 0; text-align:center; color: var(--muted-2); font-family: var(--mono); font-size: 0.74rem; border-top: 1px solid var(--border); }
-
-  /* Utility for very small screens */
-  @media (max-width: 380px){
-    .wrap{ padding: 0 18px; }
-    .cta-row .btn, .contact-links .btn{ width: 100%; text-align:center; }
-    .cta-row, .contact-links{ flex-direction: column; }
-  }
-</style>
 </head>
+
 <body>
 
-<header>
-  <nav aria-label="Primary">
-    <div class="logo">KAREEM<span>_</span>ZEIN</div>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
-      <span></span>
-    </button>
-    <ul class="navlinks" id="navlinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li class="cta-item"><a class="btn btn-primary" href="#contact">Get in Touch</a></li>
-    </ul>
-  </nav>
-</header>
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="/" class="logo">
+                Kareem<span>-</span>Zein
+            </a>
+            <button class="nav-toggle" 
+                type="button" 
+                aria-expanded="false" 
+                aria-controls="site-navigation"
+                aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-<main>
-  <div class="wrap hero">
-    <div>
-      <p class="eyebrow">Open to international remote roles</p>
-      <h1>Kareem Zein<br><span class="accent">.NET Engineer</span></h1>
-      <p class="lead">Building enterprise applications, APIs and high-performance data systems.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#experience">View Experience</a>
-        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
-      </div>
-      <div class="stat-row">
-        <div class="stat"><b>3+</b><span>Years experience</span></div>
-        <div class="stat"><b>1</b><span>Products built from scratch</span></div>
-      </div>
-    </div>
+            <nav id="site-navigation" class="nav-links" aria-label="Main navigation">
+                <a href="/about/" aria-current="page">About</a>
+                <a href="/experience/">Experience</a>
+                <a href="/projects/">Projects</a>
+                <a href="/contact/">Contact</a>
+            </nav>
 
-    <div class="diagram-wrap" role="img" aria-label="Diagram showing Kareem Zein connected to his core technologies: SQL Server, ASP.NET Core Web API, Entity Framework Core, C#/C++, WPF, and RESTful APIs">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <path class="line l1" d="M50,50 L50,12"></path>
-        <path class="line l2" d="M50,50 L82.9,31"></path>
-        <path class="line l3" d="M50,50 L82.9,69"></path>
-        <path class="line l4" d="M50,50 L50,88"></path>
-        <path class="line l5" d="M50,50 L17.1,69"></path>
-        <path class="line l6" d="M50,50 L17.1,31"></path>
-      </svg>
-      <div class="rel-label" style="left:50%; top:29%;">stores</div>
-      <div class="rel-label" style="left:69%; top:39%;">exposes</div>
-      <div class="rel-label" style="left:69%; top:61%;">maps to</div>
-      <div class="rel-label" style="left:50%; top:71%;">implements</div>
-      <div class="rel-label" style="left:31%; top:61%;">renders</div>
-      <div class="rel-label" style="left:31%; top:39%;">serves</div>
-
-      <div class="node center" style="left:50%; top:50%;">
-        <div class="dot"></div>
-        <div class="label">Kareem Zein</div>
-      </div>
-      <div class="node" style="left:50%; top:12%;">
-        <div class="dot"></div>
-        <div class="label">SQL Server / T-SQL</div>
-      </div>
-      <div class="node" style="left:82.9%; top:31%;">
-        <div class="dot"></div>
-        <div class="label">ASP.NET Core Web API</div>
-      </div>
-      <div class="node" style="left:82.9%; top:69%;">
-        <div class="dot"></div>
-        <div class="label">Entity Framework Core</div>
-      </div>
-      <div class="node" style="left:50%; top:88%;">
-        <div class="dot"></div>
-        <div class="label">C# / C++</div>
-      </div>
-      <div class="node" style="left:17.1%; top:69%;">
-        <div class="dot"></div>
-        <div class="label">WPF Desktop</div>
-      </div>
-      <div class="node" style="left:17.1%; top:31%;">
-        <div class="dot"></div>
-        <div class="label">RESTful APIs</div>
-      </div>
-    </div>
-  </div>
-
-  <section id="about">
-    <div class="wrap about-grid reveal">
-      <div>
-        <p class="kicker">// About</p>
-        <h2 style="margin-bottom:20px;">Built for systems that can't afford to go down</h2>
-        <p>I'm a results-driven .NET Engineer with 3+ years of hands-on experience designing, developing, and maintaining enterprise-grade desktop and backend applications using C#, C++, ASP.NET Core Web API, and SQL Server.</p>
-        <p>My core strength is ERP system development — building new modules, optimizing legacy code, and engineering databases that stay fast and reliable under high transaction volume. I've led feature development on production ERP platforms, mentored junior engineers through code review, and tuned SQL Server performance at the query and index level.</p>
-        <p>Outside work, I founded and architected the Syrian Applications Store (Discontinued), a digital marketplace built on ASP.NET Core Web API — proof that I can take a system from idea to production on my own.</p>
-      </div>
-      <dl class="fact-card">
-        <dt>Location</dt>
-        <dd>Syria</dd>
-        <dt>Focus</dt>
-        <dd>Backend & Desktop Systems</dd>
-        <dt>Experience</dt>
-        <dd>3+ years, ERP platforms</dd>
-        <dt>Languages</dt>
-        <dd>Arabic (Native), English (B1–B2)</dd>
-        <dt>Status</dt>
-        <dd>Open to international roles</dd>
-      </dl>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="kicker">// Skills</p>
-        <h2>Technical stack</h2>
-      </div>
-      <div class="tables reveal">
-        <div class="db-table">
-          <div class="tname">Core</div>
-          <ul>
-            <li>C#</li>
-            <li>.Net 10</li>
-            <li>C++</li>
-          </ul>
         </div>
-        <div class="db-table">
-          <div class="tname">Frameworks | Technologies</div>
-          <li>ASP.Net core</li>
-          <li>Entity Framework Core</li>
-          <li>WPF</li>
-        </div>
-        <div class="db-table">
-          <div class="tname">Databases</div>
-          <li>SQL Server</li>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <div class="hero-status">
+                        <span class="status-dot"></span>
+                        Open to international remote opportunities
+                    </div>
 
-  <section id="experience">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="kicker">// Experience</p>
-        <h2>Where I've built things</h2>
-      </div>
-      <div class="timeline reveal">
-        <div class="tl-item">
-          <div class="tl-date">JUL 2025 — JUL 2026</div>
-          <div class="tl-role">Senior Software Engineer</div>
-          <div class="tl-org">alameensoft</div>
-          <ul>
-            <li>Led development of new features for the Alameen ERP platform using C#, c++ and SQL Server.</li>
-            <li>Designed complex business logic modules with a focus on performance and reliability.</li>
-            <li>Conducted code reviews and mentored junior engineers on code quality and standards.</li>
-            <li>Optimized SQL Server performance through query tuning, indexing, and stored procedure improvements.</li>
-          </ul>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">JAN 2023 — JUN 2025</div>
-          <div class="tl-role">Software Engineer</div>
-          <div class="tl-org">alameensoft</div>
-          <ul>
-            <li>Engineered and delivered multiple modules for Alameen 10 ERP using C#, C++, and SQL Server.</li>
-            <li>Designed and optimized complex T-SQL queries, stored procedures, and schemas for high-volume transactional data.</li>
-            <li>Built WPF desktop interfaces with business logic tightly integrated to SQL Server backends.</li>
-          </ul>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">MAY 2025 — MAY 2026 (Discontinued)</div>
-          <div class="tl-role">Founder & Technical Architect</div>
-          <div class="tl-org">Syrian Applications Store (Discontinued)</div>
-          <ul>
-            <li>Founded a digital marketplace giving users in Syria secure, reliable access to mobile applications.</li>
-            <li>Architected and developed the backend using ASP.NET Core Web API following RESTful design principles.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <p class="hero-eyebrow">
+                        .NET Backend Engineer
+                    </p>
 
-  <section id="project">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="kicker">// Featured Project</p>
-        <h2>File hash Generator and validator</h2>
-      </div>
-      <div class="project-card reveal">
-        <div>
-          <span class="tag">C# | .Net | WPF</span>
-          <h3>A lightweight open-source desktop tool for generating and validating file hashes</h3>
-          <p>Built to generate and validate file hashes locally and offline, the application supports multiple hashing algorithms and processes large files using chunked streaming with an 80 KB buffer — keeping memory usage controlled while maintaining a responsive UI.
-            The application uses WPF-UI for a modern Windows 11-inspired interface and is distributed as a self-contained executable, requiring no pre-installed .NET Runtime.</p>
+                    <h1>
+                        I build backend systems
+                        <span>that handle real business.</span>
+                    </h1>
 
-            <a href="https://github.com/Kareem-Zein/FileHashGeneratorAndValidator" target="_blank" 
-            rel="noopener noreferrer" aria-label="View on GitHub" class="social-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
-            </svg>
-            <span>GitHub</span>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Syrian Applications Store (Discontinued)</h2>
-      </div>
-      <div class="project-card reveal">
-        <div>
-          <span class="tag">ASP.NET Core Web API</span>
-          <h3>A digital marketplace built from the ground up</h3>
-          <p>Founded to give users in Syria secure, reliable access to mobile applications, the platform's backend is architected entirely on ASP.NET Core Web API with RESTful design principles — covering everything from API design to deployment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <p class="hero-description">
+                        .NET Software Engineer focused on ASP.NET Core, SQL Server,
+                        ERP systems, APIs, and performance-critical business applications.
+                    </p>
 
-  <section>
-    <div class="wrap edu-grid reveal">
-      <div>
-        <h4>Education</h4>
-        <div class="item">
-          <div class="t">Diploma in Software Engineering</div>
-          <div class="s">TCC – Damascus University, Syria · 2020–2023</div>
-        </div>
-      </div>
-      <div>
-        <h4>Certifications</h4>
-        <div class="item">
-          <div class="t">Introduction to Structured Query Language (SQL)</div>
-          <div class="s">Coursera, 2022</div>
-        </div>
-        <div class="item">
-          <div class="t">Building Web Applications in PHP</div>
-          <div class="s">Coursera, 2022</div>
-        </div>
-        <div class="item">
-          <div class="t">HTML, CSS and JavaScript for Web Developers</div>
-          <div class="s">Coursera, 2021</div>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <div class="hero-actions">
+                        <a href="/projects/" class="button button-primary">
+                            View my work
+                            <span>→</span>
+                        </a>
 
-  <section id="contact">
-    <div class="wrap">
-      <div class="contact-card reveal">
-        <p class="kicker" style="justify-content:center;">// Contact</p>
-        <h2>Let's build something reliable</h2>
-        <p>Open to backend and desktop engineering roles with international teams. Reach out directly — I usually reply within a day.</p>
-        <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:contact@kareem-zein.com">contact@kareem-zein.com</a>
-          
-          <a href="https://linkedin.com/in/kareem-zein-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-            </svg>
-            <span>LinkedIn</span>
-          </a>
+                        <a href="/contact/" class="button button-secondary">
+                            Let's talk
+                        </a>
+                    </div>
 
-          <a href="https://github.com/kareem-zein" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
-            </svg>
-            <span>GitHub</span>
-          </a>
+                    <div class="hero-stack">
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>ASP.NET Core</span>
+                        <span>SQL Server</span>
+                        <span>EF Core</span>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-terminal">
+
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>backend.cs</span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <div>
+                            <span class="code-keyword">public</span>
+                            <span class="code-keyword">async</span>
+                            <span class="code-keyword">Task</span>
+                        </div>
+
+                        <div class="code-indent">
+                            <span class="code-type">BuildReliableSystems</span>()
+                        </div>
+
+                        <div>
+                            {
+                        </div>
+
+                        <div class="code-indent">
+                            <span class="code-keyword">await</span>
+                            DesignForReality();
+                        </div>
+
+                        <div class="code-indent">
+                            OptimizeDataAccess();
+                        </div>
+
+                        <div class="code-indent">
+                            KeepItMaintainable();
+                        </div>
+
+                        <div>
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-eyebrow">About</p>
+
+                    <h2>
+                        Engineering software around
+                        <span>real-world problems.</span>
+                    </h2>
+                </div>
+
+                <div class="about-preview">
+
+                    <div class="about-number">
+                        <strong>3+</strong>
+                        <span>Years of experience</span>
+                    </div>
+
+                    <div class="about-content">
+                        <p>
+                            I work primarily with C# and .NET, building enterprise
+                            applications, backend services and APIs.
+                        </p>
+
+                        <p>
+                            My strongest areas are ASP.NET Core, SQL Server, EF Core
+                            and improving backend performance where
+                            database behavior and application code meet.
+                        </p>
+
+                        <a href="/about/" class="text-link">
+                            More about me →
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-eyebrow">Expertise</p>
+
+                    <h2>
+                        What I work with.
+                    </h2>
+                </div>
+
+
+                <div class="expertise-grid">
+
+                    <article class="expertise-card">
+                        <span class="expertise-number">01</span>
+
+                        <h3>ASP.NET Core</h3>
+
+                        <p>
+                            Backend APIs, business logic, service architecture,
+                            validation, authentication, and production-ready .NET services.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>Web API</span>
+                            <span>REST</span>
+                            <span>C#</span>
+                        </div>
+                    </article>
+
+
+                    <article class="expertise-card">
+                        <span class="expertise-number">02</span>
+
+                        <h3>SQL Server</h3>
+
+                        <p>
+                            Query optimization, indexing, stored procedures and
+                            execution behavior.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>T-SQL</span>
+                            <span>Indexes</span>
+                            <span>Queries</span>
+                        </div>
+                    </article>
+
+
+                    <article class="expertise-card">
+                        <span class="expertise-number">03</span>
+
+                        <h3>Enterprise Systems</h3>
+
+                        <p>
+                            ERP applications and business software where reliability,
+                            transactional consistency, and maintainability matter.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>ERP</span>
+                            <span>Business Logic</span>
+                            <span>WPF</span>
+                        </div>
+                    </article>
+
+
+                    <article class="expertise-card">
+                        <span class="expertise-number">04</span>
+
+                        <h3>Backend Performance</h3>
+
+                        <p>
+                            Finding slow database operations, reducing unnecessary work,
+                            and improving application behavior based on actual bottlenecks.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>Profiling</span>
+                            <span>EF Core</span>
+                            <span>Optimization</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-eyebrow">Experience</p>
+
+                    <h2>
+                        Production experience,
+                        <span>not just tutorials.</span>
+                    </h2>
+                </div>
+
+
+                <div class="experience-preview">
+
+                    <article class="experience-item">
+
+                        <div class="experience-meta">
+                            <span class="experience-year">
+                                2025 — 2026
+                            </span>
+
+                            <span class="experience-type">
+                                Full-time
+                            </span>
+                        </div>
+
+                        <div class="experience-main">
+
+                            <h3>
+                                Senior Software Engineer
+                            </h3>
+
+                            <p class="experience-company">
+                                alameensoft
+                            </p>
+
+                            <p>
+                                Worked on enterprise software using C#/.NET, C++,
+                                ERP modules, SQL Server, backend services,
+                                and WPF applications.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="experience-item">
+
+                        <div class="experience-meta">
+                            <span class="experience-year">
+                                2023 — 2025
+                            </span>
+
+                            <span class="experience-type">
+                                Full-time
+                            </span>
+                        </div>
+
+                        <div class="experience-main">
+
+                            <h3>
+                                Software Engineer
+                            </h3>
+
+                            <p class="experience-company">
+                                alameensoft
+                            </p>
+
+                            <p>
+                                Built and maintained enterprise features,
+                                business logic, database operations, WPF applications,
+                                and transactional workflows.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <a href="/experience/" class="text-link">
+                    View full experience →
+                </a>
+
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header section-header-row">
+
+                    <div>
+                        <p class="section-eyebrow">Selected Work</p>
+
+                        <h2>
+                            Projects worth looking at.
+                        </h2>
+                    </div>
+
+                    <a href="/projects/" class="text-link">
+                        All projects →
+                    </a>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <article class="project-card project-card-featured">
+
+                        <div class="project-top">
+                            <span class="project-type">
+                                .NET Library
+                            </span>
+
+                            <span class="project-arrow">
+                                ↗
+                            </span>
+                        </div>
+
+                        <h3>
+                            KZ.FileHash
+                        </h3>
+
+                        <p>
+                            Lightweight .NET library for asynchronous file and
+                            stream hashing with cancellation, progress reporting,
+                            and memory-efficient processing.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>Streams</span>
+                            <span>NuGet</span>
+                        </div>
+
+                        <a href="/projects/kz-filehash/" class="project-link">
+                            Explore project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span class="project-type">
+                                Desktop Application
+                            </span>
+
+                            <span class="project-arrow">
+                                ↗
+                            </span>
+                        </div>
+
+                        <h3>
+                            File Hash Generator And Validator
+                        </h3>
+
+                        <p>
+                            Desktop application for generating and validating
+                            cryptographic file hashes with reusable hashing logic.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>Desktop</span>
+                        </div>
+
+                        <a href="/projects/file-hash-generator/" class="project-link">
+                            Explore project →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="section section-cta">
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div>
+                        <p class="section-eyebrow">
+                            Contact
+                        </p>
+
+                        <h2>
+                            Have a backend problem
+                            worth solving?
+                        </h2>
+
+                        <p>
+                            I'm open to international remote opportunities,
+                            backend engineering work, and selected projects
+                            involving .NET and SQL Server.
+                        </p>
+                    </div>
+
+                    <a href="/contact/" class="button button-primary">
+                        Get in touch →
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © 2026 Kareem Zein
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/Kareem-Zein" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kareem-zein-" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </div>
         </div>
-        
-      </div>
-    </div>
-  </section>
-</main>
+    </footer>
 
-<footer>
-  <div class="wrap">© 2026 Kareem Zein — .NET Engineer</div>
-</footer>
 
-<script>
-  // Mobile nav toggle
-  var toggle = document.querySelector('.menu-toggle');
-  var links = document.getElementById('navlinks');
-  toggle.addEventListener('click', function(){
-    var open = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  links.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      links.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  // Scroll reveal
-  if ('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
-  }
-</script>
+    <script src="/js/script.js"></script>
 
 </body>
+
 </html>

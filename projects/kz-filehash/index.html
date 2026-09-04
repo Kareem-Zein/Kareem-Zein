@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9CJQXSVK6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C9CJQXSVK6');
+
+        gtag('event', 'page_info', {
+            page_url: window.location.href,
+            page_path: window.location.pathname,
+            page_title: document.title
+        });
+    </script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KZ.FileHash | Async .NET File & Stream Hashing Library</title>
+
+    <meta name="description"
+        content="KZ.FileHash is a lightweight .NET library for asynchronous cryptographic hashing of files and streams, with multi-algorithm hashing, cancellation, progress reporting, and memory-efficient streaming.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://kareem-zein.com/projects/kz-filehash/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="KZ.FileHash | Async .NET File & Stream Hashing Library">
+
+    <meta property="og:description"
+        content="A lightweight .NET library for asynchronous cryptographic hashing of files and streams, with multi-algorithm hashing, cancellation, progress reporting, and memory-efficient streaming.">
+
+    <meta property="og:url" content="https://kareem-zein.com/projects/kz-filehash/">
+
+    <meta property="og:site_name" content="Kareem Zein">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:title" content="KZ.FileHash | Async .NET File & Stream Hashing Library">
+
+    <meta name="twitter:description"
+        content="A lightweight .NET library for asynchronous cryptographic hashing of files and streams, with multi-algorithm hashing, cancellation, progress reporting, and memory-efficient streaming.">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "@id": "https://kareem-zein.com/projects/kz-filehash/#software",
+    "name": "KZ.FileHash",
+    "description": "A lightweight .NET library for asynchronous cryptographic hashing of files and streams, with multi-algorithm hashing, cancellation, progress reporting, and memory-efficient streaming.",
+    "url": "https://kareem-zein.com/projects/kz-filehash/",
+    "codeRepository": "https://github.com/Kareem-Zein/KZ.FileHash",
+    "programmingLanguage": "C#",
+    "runtimePlatform": ".NET",
+    "author": {
+        "@type": "Person",
+        "name": "Kareem Zein",
+        "url": "https://kareem-zein.com/"
+    },
+    "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="/" class="logo">
+                Kareem<span>-</span>Zein
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
+                aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-navigation" class="nav-links" aria-label="Main navigation">
+                <a href="/about/" aria-current="page">About</a>
+                <a href="/experience/">Experience</a>
+                <a href="/projects/">Projects</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Project Hero -->
+        <section class="page-hero project-detail-hero">
+            <div class="container">
+
+                <a href="/projects/" class="back-link">
+                    ← Back to projects
+                </a>
+
+                <div class="project-detail-meta">
+                    <span class="project-type">.NET Library</span>
+
+                    <span class="project-status">
+                        <span class="status-dot"></span>
+                        Open Source
+                    </span>
+                </div>
+
+                <h1>
+                    KZ.FileHash
+                    <span>Asynchronous hashing for files and streams.</span>
+                </h1>
+
+                <p class="page-hero-description">
+                    A focused .NET library for calculating cryptographic hashes
+                    from files and streams with asynchronous I/O, multiple
+                    algorithms in a single read operation, cancellation,
+                    progress reporting, and memory-efficient streaming.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="https://github.com/Kareem-Zein/KZ.FileHash" class="button button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        View on GitHub
+                    </a>
+
+                    <a href="/projects/" class="button button-secondary">
+                        All Projects
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Overview -->
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">01 / Overview</span>
+
+                    <h2>
+                        A focused library for
+                        <span>file and stream hashing.</span>
+                    </h2>
+                </div>
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-content">
+
+                        <p>
+                            KZ.FileHash provides a focused API for calculating
+                            cryptographic hashes from files and streams in
+                            modern .NET applications.
+                        </p>
+
+                        <p>
+                            The library processes data incrementally instead of
+                            loading the entire file into memory. It uses buffered
+                            asynchronous I/O, pooled memory, and incremental
+                            hashing to keep memory usage controlled during
+                            file-processing operations.
+                        </p>
+
+                        <p>
+                            Multiple hashing algorithms can be calculated during
+                            a single read operation, avoiding unnecessary repeated
+                            reads of the same data. The library also supports both
+                            seekable and non-seekable streams.
+                        </p>
+
+                        <p>
+                            Hashing operations can optionally report progress and
+                            observe cancellation requests, while buffer size can
+                            be customized for different environments and workloads.
+                        </p>
+
+                    </div>
+
+                    <div class="project-fact-card">
+
+                        <div class="project-fact">
+                            <span>Language</span>
+                            <strong>C#</strong>
+                        </div>
+
+                        <div class="project-fact">
+                            <span>Runtime</span>
+                            <strong>.NET 8 / 9 / 10</strong>
+                        </div>
+
+                        <div class="project-fact">
+                            <span>Distribution</span>
+                            <strong>NuGet</strong>
+                        </div>
+
+                        <div class="project-fact">
+                            <span>License</span>
+                            <strong>MIT</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Problem -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">02 / Problem</span>
+
+                    <h2>
+                        Hashing is straightforward.
+                        <span>Efficient hashing requires more consideration.</span>
+                    </h2>
+                </div>
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>Memory usage</h3>
+
+                        <p>
+                            Loading an entire file into memory before hashing is
+                            unnecessary for large inputs and can create avoidable
+                            memory pressure.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>Repeated I/O</h3>
+
+                        <p>
+                            Calculating several hashes independently can require
+                            reading the same data multiple times. A single-pass
+                            approach can calculate multiple algorithms while the
+                            data is already being read.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        03
+                    </div>
+
+                    <div>
+                        <h3>Long-running operations</h3>
+
+                        <p>
+                            Hashing large files can take time. Applications may
+                            need progress reporting and cancellation instead of
+                            treating the operation as an opaque synchronous call.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Solution -->
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">03 / Solution</span>
+
+                    <h2>
+                        A small API.
+                        <span>Deliberate implementation choices.</span>
+                    </h2>
+                </div>
+
+                <div class="project-solution-grid">
+
+                    <article class="project-solution-card">
+                        <span class="project-card-number">01</span>
+
+                        <h3>Asynchronous I/O</h3>
+
+                        <p>
+                            Hashing APIs use asynchronous operations for file and
+                            stream processing, making them suitable for modern
+                            .NET applications and longer-running workloads.
+                        </p>
+                    </article>
+
+                    <article class="project-solution-card">
+                        <span class="project-card-number">02</span>
+
+                        <h3>Single-read Multi-hashing</h3>
+
+                        <p>
+                            Multiple hashing algorithms can process the same input
+                            during a single read operation instead of repeatedly
+                            reading the source data.
+                        </p>
+                    </article>
+
+                    <article class="project-solution-card">
+                        <span class="project-card-number">03</span>
+
+                        <h3>Streaming</h3>
+
+                        <p>
+                            Files and streams are processed incrementally without
+                            loading the complete input into memory, including
+                            support for non-seekable streams.
+                        </p>
+                    </article>
+
+                    <article class="project-solution-card">
+                        <span class="project-card-number">04</span>
+
+                        <h3>Pooled Memory</h3>
+
+                        <p>
+                            Internal buffering uses ArrayPool&lt;byte&gt; to reduce
+                            unnecessary allocations during repeated data-processing
+                            operations.
+                        </p>
+                    </article>
+
+                    <article class="project-solution-card">
+                        <span class="project-card-number">05</span>
+
+                        <h3>Cancellation & Progress</h3>
+
+                        <p>
+                            Consumers can observe hashing progress and cancel
+                            operations that are no longer required.
+                        </p>
+                    </article>
+
+                    <article class="project-solution-card">
+                        <span class="project-card-number">06</span>
+
+                        <h3>Incremental Hashing</h3>
+
+                        <p>
+                            IncrementalHash is used for streaming hash calculation,
+                            with a dedicated IncrementalHashEngine for processing
+                            data chunks directly.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Technical Design -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">04 / Technical Design</span>
+
+                    <h2>
+                        Designed around
+                        <span>streaming and controlled resource usage.</span>
+                    </h2>
+                </div>
+
+                <div class="technical-layout">
+
+                    <div class="technical-content">
+
+                        <h3>Incremental stream processing</h3>
+
+                        <p>
+                            Input data is processed in chunks rather than
+                            materializing the complete file in memory. The
+                            implementation uses buffered asynchronous I/O and
+                            incremental hash calculation.
+                        </p>
+
+                        <h3>Multiple algorithms in one pass</h3>
+
+                        <p>
+                            FileHashEngine can be configured with multiple hashing
+                            algorithms using the flags-based HashAlgorithmType
+                            API. The selected algorithms are calculated while the
+                            source data is read once.
+                        </p>
+
+                        <h3>Pooled buffering</h3>
+
+                        <p>
+                            The library uses ArrayPool&lt;byte&gt; for internal
+                            buffering to reduce allocations. The default buffer
+                            size is 64 KB and can be customized when required.
+                        </p>
+
+                        <h3>Reusable incremental hashing</h3>
+
+                        <p>
+                            IncrementalHashEngine supports calculating hashes from
+                            data chunks using ReadOnlySpan&lt;byte&gt; and can be
+                            reused after retrieving and resetting hash results.
+                        </p>
+
+                    </div>
+
+                    <div class="technical-code">
+
+                        <div class="terminal-header">
+
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>usage.cs</span>
+
+                        </div>
+
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">using</span> KZ.FileHash.Engine;
+<span class="code-keyword">using</span> KZ.FileHash.Enums;
+
+<span class="code-keyword">var</span> engine =
+    <span class="code-keyword">new</span> FileHashEngine(
+        HashAlgorithmType.SHA256
+    );
+
+<span class="code-keyword">var</span> hashes =
+    <span class="code-keyword">await</span> engine.CalculateHashAsync(
+        <span class="code-string">"example.zip"</span>
+    );
+
+Console.WriteLine(
+    hashes[HashAlgorithmType.SHA256]
+);</code></pre>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Multiple Algorithms -->
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">05 / Multi-hashing</span>
+
+                    <h2>
+                        Calculate multiple hashes
+                        <span>during a single read.</span>
+                    </h2>
+                </div>
+
+                <div class="technical-layout">
+
+                    <div class="technical-content">
+
+                        <h3>One input, multiple algorithms</h3>
+
+                        <p>
+                            KZ.FileHash supports combining hashing algorithms with
+                            the flags-based HashAlgorithmType API.
+                        </p>
+
+                        <p>
+                            This allows applications to calculate several hashes
+                            from the same file without independently reading the
+                            source for each algorithm.
+                        </p>
+
+                    </div>
+
+                    <div class="technical-code">
+
+                        <div class="terminal-header">
+
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>multiple-hashes.cs</span>
+
+                        </div>
+
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">var</span> engine =
+    <span class="code-keyword">new</span> FileHashEngine(
+        HashAlgorithmType.MD5 |
+        HashAlgorithmType.SHA256 |
+        HashAlgorithmType.SHA512
+    );
+
+<span class="code-keyword">var</span> hashes =
+    <span class="code-keyword">await</span> engine.CalculateHashAsync(
+        <span class="code-string">"example.zip"</span>
+    );
+
+Console.WriteLine(
+    hashes[HashAlgorithmType.MD5]
+);
+
+Console.WriteLine(
+    hashes[HashAlgorithmType.SHA256]
+);
+
+Console.WriteLine(
+    hashes[HashAlgorithmType.SHA512]
+);</code></pre>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Technology -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">06 / Technology</span>
+
+                    <h2>
+                        Built with a
+                        <span>focused .NET stack.</span>
+                    </h2>
+                </div>
+
+                <div class="stack-layout">
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">Language</span>
+
+                        <div class="stack-items">
+                            <span>C#</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">Runtime</span>
+
+                        <div class="stack-items">
+                            <span>.NET 8</span>
+                            <span>.NET 9</span>
+                            <span>.NET 10</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">Core APIs</span>
+
+                        <div class="stack-items">
+                            <span>Streams</span>
+                            <span>Async/Await</span>
+                            <span>CancellationToken</span>
+                            <span>IncrementalHash</span>
+                            <span>ArrayPool</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">Hashing</span>
+
+                        <div class="stack-items">
+                            <span>MD5</span>
+                            <span>SHA-1</span>
+                            <span>SHA-256</span>
+                            <span>SHA-384</span>
+                            <span>SHA-512</span>
+                            <span>SHA3-256</span>
+                            <span>SHA3-384</span>
+                            <span>SHA3-512</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">Tooling</span>
+
+                        <div class="stack-items">
+                            <span>NuGet</span>
+                            <span>BenchmarkDotNet</span>
+                            <span>GitHub Actions</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Engineering Details -->
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">07 / Engineering Details</span>
+
+                    <h2>
+                        Small implementation details
+                        <span>that matter at scale.</span>
+                    </h2>
+                </div>
+
+                <div class="lessons-grid">
+
+                    <article class="lesson-card">
+
+                        <span>01</span>
+
+                        <h3>64 KB default buffer</h3>
+
+                        <p>
+                            The default internal buffer is 64 KB and can be
+                            customized for different environments and workloads.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>02</span>
+
+                        <h3>Non-seekable streams</h3>
+
+                        <p>
+                            Hashing does not require every input stream to support
+                            seeking, making the API suitable for forward-only
+                            streaming sources.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>03</span>
+
+                        <h3>Raw or hexadecimal results</h3>
+
+                        <p>
+                            Hash results can be retrieved as hexadecimal strings
+                            or raw byte arrays depending on the consuming
+                            application's needs.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>04</span>
+
+                        <h3>Configurable buffering</h3>
+
+                        <p>
+                            Applications can provide a custom buffer size instead
+                            of being restricted to the default configuration.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>05</span>
+
+                        <h3>Reusable incremental engine</h3>
+
+                        <p>
+                            IncrementalHashEngine can be reused after retrieving
+                            and resetting hash results.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>06</span>
+
+                        <h3>Performance monitoring</h3>
+
+                        <p>
+                            The project includes BenchmarkDotNet benchmarks and
+                            GitHub Actions for continuously monitoring execution
+                            performance and memory allocations.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Algorithms -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">08 / Supported Algorithms</span>
+
+                    <h2>
+                        Standard algorithms
+                        <span>for compatibility and modern applications.</span>
+                    </h2>
+                </div>
+
+                <div class="stack-layout">
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">Legacy / Compatibility</span>
+
+                        <div class="stack-items">
+                            <span>MD5</span>
+                            <span>SHA-1</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">SHA-2</span>
+
+                        <div class="stack-items">
+                            <span>SHA-256</span>
+                            <span>SHA-384</span>
+                            <span>SHA-512</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">SHA-3</span>
+
+                        <div class="stack-items">
+                            <span>SHA3-256</span>
+                            <span>SHA3-384</span>
+                            <span>SHA3-512</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-detail-content">
+
+                    <p>
+                        MD5 and SHA-1 are included primarily for compatibility and
+                        non-security-critical integrity checking. They should not
+                        be used for security-sensitive applications.
+                    </p>
+
+                    <p>
+                        For modern security-sensitive applications, SHA-256,
+                        SHA-384, SHA-512, or SHA-3 variants are recommended.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Engineering Lessons -->
+        <section class="section section-surface">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">09 / Engineering Lessons</span>
+
+                    <h2>
+                        What this project
+                        <span>actually demonstrates.</span>
+                    </h2>
+                </div>
+
+                <div class="lessons-grid">
+
+                    <article class="lesson-card">
+
+                        <span>01</span>
+
+                        <h3>Resource awareness</h3>
+
+                        <p>
+                            Data-processing APIs should account for memory,
+                            allocations, I/O, and execution characteristics
+                            instead of assuming that inputs are always small.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>02</span>
+
+                        <h3>Avoid redundant I/O</h3>
+
+                        <p>
+                            When several algorithms operate on the same input,
+                            calculating them during one read can avoid unnecessary
+                            repeated reads of the source data.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>03</span>
+
+                        <h3>Cancellation is part of the API</h3>
+
+                        <p>
+                            Long-running operations should give consuming
+                            applications a clear way to stop work that is no
+                            longer required.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-card">
+
+                        <span>04</span>
+
+                        <h3>Keep libraries focused</h3>
+
+                        <p>
+                            A reusable library becomes easier to integrate when
+                            its responsibilities remain narrow and explicit.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Project Links -->
+        <section class="section">
+            <div class="container">
+
+                <div class="project-links-box">
+
+                    <div>
+
+                        <span class="section-label">Project Links</span>
+
+                        <h2>
+                            Explore the
+                            <span>source code.</span>
+                        </h2>
+
+                        <p>
+                            Read the implementation, documentation, benchmarks,
+                            tests, and project history on GitHub.
+                        </p>
+
+                    </div>
+
+                    <div class="hero-actions">
+
+                        <a href="https://github.com/Kareem-Zein/KZ.FileHash" class="button button-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            GitHub Repository
+                        </a>
+
+                        <a href="/projects/" class="button button-secondary">
+                            More Projects
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <span class="section-label">Next</span>
+
+                    <h2>
+                        Have a backend problem
+                        <span>worth solving?</span>
+                    </h2>
+
+                    <p>
+                        I work on backend systems, APIs, SQL Server, ERP software,
+                        and performance-focused engineering problems.
+                    </p>
+
+                    <a href="/contact/" class="button button-primary">
+                        Let’s talk
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © 2026 Kareem Zein
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/Kareem-Zein" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kareem-zein-" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

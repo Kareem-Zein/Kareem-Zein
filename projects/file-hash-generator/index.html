@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9CJQXSVK6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C9CJQXSVK6');
+
+        gtag('event', 'page_info', {
+            page_url: window.location.href,
+            page_path: window.location.pathname,
+            page_title: document.title
+        });
+    </script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        File Hash Generator & Validator | Kareem Zein
+    </title>
+
+    <meta name="description"
+        content="A Windows desktop application for generating and validating file hashes, built with C# and .NET 10, using WPF, MVVM, asynchronous processing, and the KZ.FileHash hashing engine.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://kareem-zein.com/projects/file-hash-generator/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="File Hash Generator & Validator | Kareem Zein">
+
+    <meta property="og:description"
+        content="A Windows desktop application for generating and validating file hashes using WPF, MVVM, asynchronous processing, and the KZ.FileHash hashing engine.">
+
+    <meta property="og:url" content="https://kareem-zein.com/projects/file-hash-generator/">
+
+    <meta property="og:site_name" content="Kareem Zein">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:title" content="File Hash Generator & Validator | Kareem Zein">
+
+    <meta name="twitter:description"
+        content="A Windows desktop application for generating and validating file hashes using WPF, MVVM, asynchronous processing, and the KZ.FileHash hashing engine.">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://kareem-zein.com/projects/file-hash-generator/#software",
+    "name": "File Hash Generator & Validator",
+    "description": "A Windows desktop application for generating and validating file hashes using WPF, MVVM, asynchronous processing, and the KZ.FileHash hashing engine.",
+    "url": "https://kareem-zein.com/projects/file-hash-generator/",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Windows",
+    "programmingLanguage": "C#",
+    "softwareVersion": "1.0.0.1",
+    "author": {
+        "@type": "Person",
+        "name": "Kareem Zein",
+        "url": "https://kareem-zein.com/"
+    },
+    "codeRepository": "https://github.com/Kareem-Zein/FileHashGeneratorAndValidator"
+}
+</script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="/" class="logo">
+                Kareem<span>-</span>Zein
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
+                aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-navigation" class="nav-links" aria-label="Main navigation">
+                <a href="/about/" aria-current="page">About</a>
+                <a href="/experience/">Experience</a>
+                <a href="/projects/">Projects</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero project-detail-hero">
+
+            <div class="container">
+
+                <a href="/projects/" class="back-link">
+                    ← Back to projects
+                </a>
+
+                <div class="project-detail-meta">
+
+                    <span class="project-type">
+                        Windows Desktop Application
+                    </span>
+
+                    <span class="project-status">
+                        <span class="status-dot"></span>
+                        Open Source
+                    </span>
+
+                </div>
+
+                <h1>
+                    File Hash Generator
+                    <span>& Validator</span>
+                </h1>
+
+                <p class="page-hero-description">
+                    A Windows desktop application for generating and validating
+                    cryptographic file hashes, built with C# and .NET 10 using
+                    WPF, MVVM, asynchronous processing, and the KZ.FileHash
+                    hashing engine.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="https://github.com/Kareem-Zein/FileHashGeneratorAndValidator" class="button button-primary"
+                        target="_blank" rel="noopener noreferrer">
+                        View on GitHub
+                    </a>
+
+                    <a href="/projects/" class="button button-secondary">
+                        All Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+        <section class="section section-surface">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        01 / Overview
+                    </span>
+
+                    <h2>
+                        A practical Windows tool
+                        <span>for file integrity verification.</span>
+                    </h2>
+
+                </div>
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-content">
+
+                        <p>
+                            File Hash Generator & Validator is a Windows desktop
+                            application for generating cryptographic hashes and
+                            verifying files against expected publisher checksums.
+                        </p>
+
+                        <p>
+                            Starting from version 1.0.0.1, the application uses
+                            KZ.FileHash as its underlying hashing engine, keeping
+                            the hashing implementation separate from the desktop
+                            application's presentation layer.
+                        </p>
+
+                        <p>
+                            The application is designed for a simple integrity
+                            workflow: select a file, calculate its hash, or
+                            compare the calculated value against an expected
+                            checksum.
+                        </p>
+
+                        <p>
+                            All processing happens locally on the user's machine,
+                            with no requirement to upload files or checksums to
+                            an external service.
+                        </p>
+
+                    </div>
+
+
+                    <div class="project-fact-card">
+
+                        <div class="project-fact">
+                            <span>Language</span>
+                            <strong>C# 14</strong>
+                        </div>
+
+                        <div class="project-fact">
+                            <span>Framework</span>
+                            <strong>.NET 10</strong>
+                        </div>
+
+                        <div class="project-fact">
+                            <span>UI</span>
+                            <strong>WPF</strong>
+                        </div>
+
+                        <div class="project-fact">
+                            <span>Architecture</span>
+                            <strong>MVVM</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Problem -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        02 / Problem
+                    </span>
+
+                    <h2>
+                        File verification is simple.
+                        <span>The workflow still needs to be reliable.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Large file processing
+                        </h3>
+
+                        <p>
+                            Hashing large files should not require loading the
+                            complete file into memory. The application processes
+                            file data incrementally through the KZ.FileHash engine.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Integrity verification
+                        </h3>
+
+                        <p>
+                            Users need a straightforward way to compare a
+                            calculated file hash against a checksum published
+                            by the software or file provider.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Responsive desktop processing
+                        </h3>
+
+                        <p>
+                            Hashing large files can take time. Asynchronous
+                            processing, progress reporting, and cancellation
+                            keep the application workflow responsive and
+                            controllable.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-problem">
+
+                    <div class="project-problem-marker">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Correct algorithm selection
+                        </h3>
+
+                        <p>
+                            Expected hashes have algorithm-specific lengths.
+                            The application validates the supplied hash length
+                            and can suggest matching algorithms when the
+                            selected algorithm does not match the expected value.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="section section-surface">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        03 / Features
+                    </span>
+
+                    <h2>
+                        Focused functionality.
+                        <span>Built around a real verification workflow.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-solution-grid">
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Generate Hashes
+                        </h3>
+
+                        <p>
+                            Calculate cryptographic hashes for selected files
+                            using the supported hashing algorithms.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Verify Checksums
+                        </h3>
+
+                        <p>
+                            Compare a calculated file hash against an expected
+                            publisher checksum to verify file integrity.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Algorithm Suggestions
+                        </h3>
+
+                        <p>
+                            Expected hash lengths are validated before processing,
+                            allowing the application to detect potential algorithm
+                            mismatches and suggest compatible algorithms.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Drag & Drop
+                        </h3>
+
+                        <p>
+                            Files can be selected directly through the interface
+                            or provided using the application's drag-and-drop
+                            workflow.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Progress & Cancellation
+                        </h3>
+
+                        <p>
+                            Long-running operations expose real-time progress
+                            through IProgress&lt;double&gt; and support
+                            cancellation through CancellationToken.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Offline Processing
+                        </h3>
+
+                        <p>
+                            File hashing and verification are performed locally,
+                            keeping the files and calculated values on the
+                            user's machine.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Architecture -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        04 / Architecture
+                    </span>
+
+                    <h2>
+                        Separate the interface
+                        <span>from the hashing engine.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="technical-layout">
+
+                    <div class="technical-content">
+
+                        <h3>
+                            MVVM application structure
+                        </h3>
+
+                        <p>
+                            The application follows a lightweight MVVM structure,
+                            separating the WPF interface from the application's
+                            state and command handling.
+                        </p>
+
+
+                        <h3>
+                            Dedicated hashing service
+                        </h3>
+
+                        <p>
+                            File hashing is exposed through a dedicated
+                            FileHashService rather than being embedded directly
+                            into the view layer. The service integrates the
+                            KZ.FileHash engine.
+                        </p>
+
+
+                        <h3>
+                            Core application components
+                        </h3>
+
+                        <p>
+                            The project contains dedicated models, services,
+                            view models, commands, and converters, keeping the
+                            desktop application structure lightweight and explicit.
+                        </p>
+
+
+                        <h3>
+                            Local asynchronous processing
+                        </h3>
+
+                        <p>
+                            File operations are performed asynchronously with
+                            cancellation and progress reporting, allowing the
+                            application to handle large files without tying the
+                            UI directly to synchronous processing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="technical-code">
+
+                        <div class="terminal-header">
+
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>project-structure.txt</span>
+
+                        </div>
+
+
+                        <div class="terminal-body">
+
+                            <pre><code>FileHashGeneratorAndValidator/
+│
+├── Core/
+│   ├── Bindable.cs
+│   └── RelayCommand.cs
+│
+├── Models/
+│   └── HashOperationResult.cs
+│
+├── Services/
+│   └── FileHashService.cs
+│
+├── ViewModels/
+│   └── MainWindowViewModel.cs
+│
+├── Converters/
+│   └── InverseBooleanConverter.cs
+│
+├── MainWindow.xaml
+└── App.xaml</code></pre>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Workflow -->
+        <section class="section section-surface">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        05 / Workflow
+                    </span>
+
+                    <h2>
+                        From file selection
+                        <span>to verified integrity.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-solution-grid">
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Select the file
+                        </h3>
+
+                        <p>
+                            Choose a file through the desktop interface or
+                            drag and drop it into the application.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Choose the algorithm
+                        </h3>
+
+                        <p>
+                            Select the hashing algorithm required for the
+                            integrity check or hash generation workflow.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Process the file
+                        </h3>
+
+                        <p>
+                            The application processes the file incrementally
+                            through the KZ.FileHash engine while reporting
+                            progress.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-solution-card">
+
+                        <span class="project-card-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Compare the result
+                        </h3>
+
+                        <p>
+                            When validating a file, the calculated hash is
+                            compared against the expected checksum using a
+                            case-insensitive comparison.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Large File Performance -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        06 / Large File Processing
+                    </span>
+
+                    <h2>
+                        Designed for large files
+                        <span>without loading them into RAM.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="technical-layout">
+
+                    <div class="technical-content">
+
+                        <h3>
+                            Incremental processing
+                        </h3>
+
+                        <p>
+                            The application does not load complete files into
+                            system memory before hashing. File data is processed
+                            incrementally through buffered streaming.
+                        </p>
+
+
+                        <h3>
+                            Low and predictable memory usage
+                        </h3>
+
+                        <p>
+                            KZ.FileHash processes data in buffered chunks and
+                            uses pooled memory internally, keeping allocations
+                            low relative to the size of the file being processed.
+                        </p>
+
+
+                        <h3>
+                            Large-file testing
+                        </h3>
+
+                        <p>
+                            The project successful processing
+                            of files larger than 3 GB without memory spikes or
+                            UI freezing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="technical-code">
+
+                        <div class="terminal-header">
+
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>processing-model.txt</span>
+
+                        </div>
+
+
+                        <div class="terminal-body">
+
+                            <pre><code>File
+ │
+ ▼
+Buffered Stream
+ │
+ ▼
+KZ.FileHash Engine
+ │
+ ├── Incremental Hashing
+ ├── ArrayPool&lt;byte&gt;
+ ├── Async Processing
+ └── Progress / Cancellation
+ │
+ ▼
+Calculated Hash
+ │
+ ▼
+Generate / Verify</code></pre>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Supported Algorithms -->
+        <section class="section section-surface">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        07 / Supported Algorithms
+                    </span>
+
+                    <h2>
+                        Multiple hashing standards
+                        <span>for compatibility and verification.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="stack-layout">
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            MD5
+                        </span>
+
+                        <div class="stack-items">
+                            <span>MD5</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            SHA-1
+                        </span>
+
+                        <div class="stack-items">
+                            <span>SHA-1</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            SHA-2
+                        </span>
+
+                        <div class="stack-items">
+                            <span>SHA-256</span>
+                            <span>SHA-384</span>
+                            <span>SHA-512</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            SHA-3
+                        </span>
+
+                        <div class="stack-items">
+                            <span>SHA3-256</span>
+                            <span>SHA3-384</span>
+                            <span>SHA3-512</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-detail-content">
+
+                    <p>
+                        The application supports MD5, SHA-1, SHA-256, SHA-384,
+                        SHA-512, SHA3-256, SHA3-384, and SHA3-512.
+                    </p>
+
+                    <p>
+                        Hash verification confirms that the calculated hash
+                        matches the expected checksum. A matching value does
+                        not, by itself, prove that the file or checksum came
+                        from a trusted source.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Technology -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        08 / Technology
+                    </span>
+
+                    <h2>
+                        Built with modern
+                        <span>.NET desktop tooling.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="stack-layout">
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            Language
+                        </span>
+
+                        <div class="stack-items">
+                            <span>C# 14</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            Runtime
+                        </span>
+
+                        <div class="stack-items">
+                            <span>.NET 10</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            UI
+                        </span>
+
+                        <div class="stack-items">
+                            <span>WPF</span>
+                            <span>WPF-UI</span>
+                            <span>Fluent Design</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            Architecture
+                        </span>
+
+                        <div class="stack-items">
+                            <span>MVVM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            Processing
+                        </span>
+
+                        <div class="stack-items">
+                            <span>Async/Await</span>
+                            <span>CancellationToken</span>
+                            <span>IProgress&lt;double&gt;</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-label">
+                            Core Engine
+                        </span>
+
+                        <div class="stack-items">
+                            <span>KZ.FileHash</span>
+                            <span>ArrayPool&lt;byte&gt;</span>
+                            <span>IncrementalHash</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Engineering Lessons -->
+        <section class="section section-surface">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        09 / Engineering Lessons
+                    </span>
+
+                    <h2>
+                        What this project
+                        <span>actually demonstrates.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="lessons-grid">
+
+                    <article class="lesson-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            Separate UI from processing
+                        </h3>
+
+                        <p>
+                            File hashing is kept outside the presentation layer,
+                            allowing the WPF interface to coordinate the workflow
+                            without owning the hashing implementation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="lesson-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            Reuse specialized components
+                        </h3>
+
+                        <p>
+                            The application builds on KZ.FileHash instead of
+                            duplicating the underlying hashing engine inside
+                            the desktop application.
+                        </p>
+
+                    </article>
+
+
+                    <article class="lesson-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            Design for large inputs
+                        </h3>
+
+                        <p>
+                            File-processing workflows should account for inputs
+                            that are several gigabytes rather than assuming
+                            that files are small.
+                        </p>
+
+                    </article>
+
+
+                    <article class="lesson-card">
+
+                        <span>04</span>
+
+                        <h3>
+                            Make long operations controllable
+                        </h3>
+
+                        <p>
+                            Progress reporting and cancellation give users and
+                            the application control over operations that may
+                            take significant time.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Links -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="project-links-box">
+
+                    <div>
+
+                        <span class="section-label">
+                            Project Links
+                        </span>
+
+                        <h2>
+                            Explore the
+                            <span>source code.</span>
+                        </h2>
+
+                        <p>
+                            Read the implementation, architecture, project
+                            structure, and development history on GitHub.
+                        </p>
+
+                    </div>
+
+
+                    <div class="hero-actions">
+
+                        <a href="https://github.com/Kareem-Zein/FileHashGeneratorAndValidator"
+                            class="button button-primary" target="_blank" rel="noopener noreferrer">
+                            GitHub Repository
+                        </a>
+
+                        <a href="/projects/" class="button button-secondary">
+                            More Projects
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <span class="section-label">
+                        Next
+                    </span>
+
+                    <h2>
+                        Have a backend problem
+                        <span>worth solving?</span>
+                    </h2>
+
+                    <p>
+                        I work on backend systems, APIs, SQL Server, ERP
+                        software, and performance-focused engineering problems.
+                    </p>
+
+                    <a href="/contact/" class="button button-primary">
+                        Let’s talk
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © 2026 Kareem Zein
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/Kareem-Zein" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kareem-zein-" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
