@@ -121,6 +121,7 @@ The application is built with **WPF-UI** and provides a modern Windows-inspired 
 Worked on enterprise software and ERP systems involving:
 
 * C# / .NET development
+* C++
 * ERP modules and transactional workflows
 * SQL Server queries, indexes, and stored procedures
 * High-volume transactional data
@@ -134,6 +135,7 @@ Worked on enterprise software and ERP systems involving:
 Worked across enterprise desktop and backend systems involving:
 
 * C# / .NET
+* C++
 * WPF
 * SQL Server
 * Query and database optimization
